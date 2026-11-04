@@ -1,0 +1,9 @@
+project: savantenvs/suricata
+target: fuzz_applayerprotodetectgetproto
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_applayerprotodetectgetproto/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_applayerprotodetectgetproto
+    libfuzzer: true
+    timeout: 30

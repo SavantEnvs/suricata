@@ -1,0 +1,1 @@
+drop dns any any -> any any (msg:"dns drop"; dns.opcode:0; dns.rcode:3; sid:14; rev:1;)

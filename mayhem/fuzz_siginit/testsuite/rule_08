@@ -1,0 +1,1 @@
+alert http any any -> any any (msg:"bytes"; content:"|41 42|"; byte_test:2,>,5,0,relative; byte_jump:1,0,relative; isdataat:10,relative; sid:9; rev:1;)

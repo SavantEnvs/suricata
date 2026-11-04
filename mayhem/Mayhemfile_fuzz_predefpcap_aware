@@ -1,0 +1,10 @@
+project: savantenvs/suricata
+target: fuzz_predefpcap_aware
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_predefpcap_aware/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_predefpcap_aware
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_predefpcap_aware/fuzz_predefpcap_aware.dict
+    timeout: 30

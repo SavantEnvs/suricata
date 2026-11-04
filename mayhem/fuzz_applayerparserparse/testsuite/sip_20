@@ -1,0 +1,8 @@
+œ@ÄINVITE sip:bob@fuzz.test SIP/2.0
+Via: SIP/2.0/UDP 1.2.3.4:5060;branch=z9hG4bK1
+From: <sip:alice@fuzz.test>;tag=1
+To: <sip:bob@fuzz.test>
+Call-ID: abc@1.2.3.4
+CSeq: 1 INVITE
+Content-Length: 0
+

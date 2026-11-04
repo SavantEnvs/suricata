@@ -1,0 +1,1 @@
+alert tcp any any -> any any (msg:"pcre"; pcre:"/^[a-z]{3}\d+$/i"; content:"x"; fast_pattern; sid:4; rev:1;)

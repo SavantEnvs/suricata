@@ -1,0 +1,1 @@
+alert http any any -> any any (msg:"http buffers"; http.method; content:"POST"; http.uri; content:"/login"; startswith; http.header; content:"Host"; http.request_body; content:"user="; sid:3; rev:1;)

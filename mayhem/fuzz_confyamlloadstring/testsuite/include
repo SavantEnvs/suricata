@@ -1,0 +1,14 @@
+%YAML 1.1
+---
+default-log-dir: /var/log/suricata/
+threading:
+  set-cpu-affinity: no
+  cpu-affinity:
+    - management-cpu-set:
+        cpu: [ 0 ]
+  detect-thread-ratio: 1.0
+logging:
+  default-log-level: notice
+  outputs:
+  - console:
+      enabled: yes

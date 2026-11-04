@@ -1,0 +1,1 @@
+alert tcp any any -> any any (msg:"stream"; stream_size:server,>,100; replace:"a"; detection_filter:track by_src,count 3,seconds 5; sid:18; rev:1;)

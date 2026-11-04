@@ -1,0 +1,1 @@
+pass ip $HOME_NET any <> any any (msg:"ipsets"; ip.src; ip.dst; sid:21; rev:1;)

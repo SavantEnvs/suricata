@@ -1,0 +1,18 @@
+From: a@fuzz.test
+To: b@fuzz.test
+Subject: =?UTF-8?B?aGVsbG8=?=
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="BOUND"
+
+--BOUND
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+hello world
+--BOUND
+Content-Type: application/octet-stream; name="a.bin"
+Content-Disposition: attachment; filename="a.bin"
+Content-Transfer-Encoding: base64
+
+SGVsbG8sIFN1cmljYXRhIQ==
+--BOUND--

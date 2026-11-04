@@ -1,0 +1,25 @@
+%YAML 1.1
+---
+vars:
+  address-groups:
+    HOME_NET: "[192.168.0.0/16,10.0.0.0/8]"
+    EXTERNAL_NET: "!$HOME_NET"
+app-layer:
+  protocols:
+    http:
+      enabled: yes
+      libhtp:
+        default-config:
+          personality: IDS
+          request-body-limit: 100kb
+stream:
+  memcap: 64mb
+  checksum-validation: no
+  reassembly:
+    depth: 1mb
+host-os-policy:
+  windows: [0.0.0.0/0]
+outputs:
+  - eve-log:
+      enabled: yes
+      types: [alert, http, dns]

@@ -1,0 +1,10 @@
+project: savantenvs/suricata
+target: fuzz_sigpcap
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_sigpcap/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_sigpcap
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_sigpcap/fuzz_sigpcap.dict
+    timeout: 30

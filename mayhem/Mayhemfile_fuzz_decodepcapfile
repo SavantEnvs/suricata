@@ -1,0 +1,9 @@
+project: savantenvs/suricata
+target: fuzz_decodepcapfile
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_decodepcapfile/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_decodepcapfile
+    libfuzzer: true
+    timeout: 30
