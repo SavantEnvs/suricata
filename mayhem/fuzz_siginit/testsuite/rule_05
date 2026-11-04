@@ -1,0 +1,1 @@
+alert tls any any -> any any (msg:"tls"; tls.sni; content:"fuzz"; tls.cert_subject; content:"CN="; ja3.hash; content:"abc"; sid:6; rev:1;)

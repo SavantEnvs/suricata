@@ -1,0 +1,1 @@
+alert tcp $HOME_NET any -> $EXTERNAL_NET 80 (msg:"flow"; flow:established,to_server; content:"GET"; depth:3; offset:0; nocase; classtype:web-application-attack; sid:2; rev:2;)

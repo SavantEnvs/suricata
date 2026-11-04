@@ -1,0 +1,1 @@
+alert tcp any any -> any any (msg:"rev1"; content:"a"; content:"b"; distance:2; within:5; content:"c"; sid:19; rev:1; metadata:created_at 2020_01_01, updated_at 2021_01_01; reference:url,example.com;)

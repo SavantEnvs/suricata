@@ -1,0 +1,9 @@
+project: savantenvs/suricata
+target: fuzz_iprep
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_iprep/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_iprep
+    libfuzzer: true
+    timeout: 30

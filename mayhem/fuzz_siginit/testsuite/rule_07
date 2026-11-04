@@ -1,0 +1,1 @@
+alert tcp any any -> any any (msg:"tcp"; flags:SA,12; seq:100; ack:1; window:1024; flowbits:set,x; flowbits:isnotset,y; flowint:a,=,1; sid:8; rev:1;)

@@ -1,0 +1,1 @@
+alert tcp any any -> any any (msg:"datasets"; http.uri; dataset:isset,uris,type string,state uris.lst; sid:11; rev:1;)

@@ -1,0 +1,1 @@
+alert ssh any any -> any any (msg:"ssh"; ssh.hassh; content:"abc"; ssh.software; content:"Open"; sid:16; rev:1;)

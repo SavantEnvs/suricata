@@ -1,0 +1,9 @@
+project: savantenvs/suricata
+target: fuzz_mimedecparseline
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_mimedecparseline/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_mimedecparseline
+    libfuzzer: true
+    timeout: 30

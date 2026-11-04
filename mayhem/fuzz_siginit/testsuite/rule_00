@@ -1,0 +1,1 @@
+alert tcp any any -> any any (msg:"basic"; content:"abc"; sid:1; rev:1;)

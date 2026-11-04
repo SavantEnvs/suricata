@@ -1,0 +1,1 @@
+alert udp any any -> any 53 (msg:"dns"; dns.query; content:"example"; endswith; bsize:>3; sid:5; rev:1;)

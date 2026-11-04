@@ -1,0 +1,1 @@
+alert smb any any -> any any (msg:"smb"; smb.named_pipe; content:"srvsvc"; smb.share; content:"IPC"; sid:10; rev:1;)

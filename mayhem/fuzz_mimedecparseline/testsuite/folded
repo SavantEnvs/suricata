@@ -1,0 +1,7 @@
+Subject: a very
+ long folded
+	header line
+Message-ID: <1@fuzz.test>
+Content-Type: text/plain; boundary=x
+
+body

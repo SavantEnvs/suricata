@@ -1,0 +1,4 @@
+ÿœ@ÄINVITE sip:bob@fuzz.test SIP/2.0
+Via: SIP/2.0/UDP a.fuzz.test
+Call-ID: 1
+

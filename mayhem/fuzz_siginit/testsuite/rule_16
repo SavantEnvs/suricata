@@ -1,0 +1,1 @@
+alert dcerpc any any -> any any (msg:"dcerpc"; dcerpc.iface:12345678-1234-abcd-ef00-0123456789ab; dcerpc.opnum:5; sid:17; rev:1;)

@@ -1,0 +1,1 @@
+alert quic any any -> any any (msg:"quic"; quic.version; content:"Q043"; quic.sni; content:"fuzz"; sid:15; rev:1;)

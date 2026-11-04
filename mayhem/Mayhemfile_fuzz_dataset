@@ -1,0 +1,9 @@
+project: savantenvs/suricata
+target: fuzz_dataset
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_dataset/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_dataset
+    libfuzzer: true
+    timeout: 30

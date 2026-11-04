@@ -1,0 +1,10 @@
+project: savantenvs/suricata
+target: fuzz_siginit
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_siginit/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_siginit
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_siginit/fuzz_siginit.dict
+    timeout: 30

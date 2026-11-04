@@ -1,0 +1,1 @@
+alert ip any any -> any any (msg:"ipopts"; ipopts:rr; ttl:>10; tos:8; id:1234; fragbits:M; sid:7; rev:1;)

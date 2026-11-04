@@ -1,0 +1,1 @@
+alert bittorrent-dht any any -> any any (msg:"SURICATA BitTorrent DHT malformed packet"; app-layer-event:bittorrent-dht.malformed_packet; classtype:protocol-command-decode; sid:2243000; rev:1;)

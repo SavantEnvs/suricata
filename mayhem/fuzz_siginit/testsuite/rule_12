@@ -1,0 +1,1 @@
+alert http any any -> any any (msg:"lua-less app-layer"; app-layer-protocol:http; app-layer-event:http.invalid_request_line; filestore; fileext:"exe"; filemagic:"PE"; filesize:>100; sid:13; rev:1;)
